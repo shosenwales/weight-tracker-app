@@ -1,7 +1,22 @@
+:root {
+    --primary-color: #333;
+    --secondary-color:#444;
+    --overlay-color:rgba(0,0,0,0.5);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Nanum Gothic', sans-serif;
 }
+h1{
+    font-size: 70px;
+}
 a{
+    color: var(--secondary-color);
     text-decoration: none;
 }
 
@@ -42,4 +57,27 @@ ul{
 
 .navbar .nav a:hover{
     color: #555;
+}
+
+/* main page */
+
+.main-page {
+    margin: 2rem 0;
+}
+
+.main-page .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-page {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.main-page p {
+    margin: 1rem 0;
 }
